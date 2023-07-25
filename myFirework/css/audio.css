@@ -1,0 +1,31 @@
+/* song  */
+.song {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation: trans1 2s infinite linear;
+    z-index: 999;
+  
+  }
+  
+  .pauseAudio {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 50px;
+  }
+  
+  @keyframes trans1 {
+    0% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* song end  */

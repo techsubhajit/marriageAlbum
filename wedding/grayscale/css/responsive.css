@@ -1,0 +1,28 @@
+
+
+   /* media */
+  
+   @media(max-width: 1024px){
+    .gallery .post_header{
+      width: calc(50% - 8px);
+    }
+    .bg_img{
+        position: relative;
+        /* width: 90%; */
+        top: 0px;
+    }
+  }
+  
+  @media(max-width: 600px){
+    .gallery .post_header{
+      width: 100%;
+      margin: 4px 0px;
+    }
+    .bg_img{
+        position: relative;
+        left: 0px;
+    }
+    .wedding {
+      width: 285px;
+  }
+  }

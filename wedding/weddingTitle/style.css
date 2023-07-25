@@ -1,0 +1,66 @@
+#tick{
+    animation: transY 0.7s infinite linear;
+}
+
+@keyframes transY {
+    0%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(-35px)
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+
+
+.heart1 {
+    animation: beat 0.8s infinite alternate;
+    transform-origin: center;
+  }
+  
+  .heart2 {
+    animation: beat 0.35s infinite alternate;
+    transform-origin: center;
+  }
+  
+  .heart3 {
+    animation: beat 0.55s infinite alternate;
+    transform-origin: center;
+  }
+  
+  .heart4 {
+    animation: beat 0.45s infinite alternate;
+    transform-origin: center;
+  }
+  
+  .heart5 {
+    animation: beat 0.4s infinite alternate;
+    transform-origin: center;
+  }
+
+
+@keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.01);
+    }
+    100% {
+      transform: scale(1);
+    }
+    
+  }
+  .happyWedding{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wedding{
+    width: 400px;
+  }
+  

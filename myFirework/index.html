@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Fireworks</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/timer.css" />
+    <link rel="stylesheet" href="./css/audio.css" />
+  </head>
+  <body>
+    <div
+      class="demoDiv"
+      style="background-color: rgb(216, 202, 229); height: 400px; width: 100%"
+    ></div>
+
+    <div class="mainTimerSection">
+      <!-- timer section -->
+      <div id="timer-section">
+        <!-- image section -->
+        <div class="title">
+          <img src="./img/STD.png" />
+        </div>
+
+        <!-- <div class="count"> -->
+        <div class="count_down">
+          <div class="counttitle">
+            <b class="numbers date"></b>
+            <b>Date</b>
+            <a href="#">
+              <i class="fa-solid fa-circle"></i><br />
+              <i class="fa-solid fa-circle"></i>
+            </a>
+          </div>
+
+          <div class="counttitle">
+            <b class="numbers month"></b>
+            <b>Month</b>
+            <a href="#">
+              <i class="fa-solid fa-circle"></i><br />
+              <i class="fa-solid fa-circle"></i>
+            </a>
+          </div>
+
+          <div class="counttitle">
+            <b class="numbers year"></b>
+            <b>Year</b>
+          </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- time_section -->
+        <div class="main">
+          <div class="countdown">
+            <div class="timerTitle">
+              <span class="number weeks"></span>
+              <span>Weeks</span>
+            </div>
+            <div class="timerTitle">
+              <span class="number days"></span>
+              <span>Days</span>
+            </div>
+            <div class="timerTitle">
+              <span class="number hours"></span>
+              <span>Hours</span>
+            </div>
+            <div class="timerTitle">
+              <span class="number minutes"></span>
+              <span>Minutes</span>
+            </div>
+            <div class="timerTitle">
+              <span class="number seconds"></span>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reverse Countdown -->
+      <div id="revCountDown"></div>
+
+      <!-- Fireworks -->
+      <div class="fireworkDiv">
+        <canvas id="canvas"></canvas>
+        <h1>Happy Anniversary</h1>
+
+        <!-- song -->
+        <div class="song">
+          <div class="pauseAudio" onclick="toggleAudio()">🔊</div>
+          <div class="playerAudio">
+            <audio
+              class="myAudio"
+              src="./img/music.mp3"
+              type="audio/mp3"
+            ></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="demoDiv"
+      style="background-color: rgb(216, 202, 229); height: 400px; width: 100%"
+    ></div>
+
+    <script src="./js/firework.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/audio.js"></script>
+  </body>
+</html>

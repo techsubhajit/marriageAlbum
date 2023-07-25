@@ -1,0 +1,635 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.typingSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: burlywood; */
+}
+
+.typingSection .imgBox {
+  width: 30%;
+
+}
+
+.typingSection .imgBox img,
+svg {
+  width: 100%;
+}
+
+
+
+
+#svg2 {
+  height: 500px;
+}
+
+
+
+/* SVG Animation */
+.love-story {
+  animation: love-story 3s infinite alternate;
+  animation-delay: 2s;
+}
+
+.begins-here {
+  animation: begin 0.5s infinite alternate;
+}
+
+.heart {
+  animation: beat 0.2s infinite alternate;
+  transform-origin: center;
+}
+
+.heart2 {
+  animation: beat 0.35s infinite alternate;
+  transform-origin: center;
+}
+
+.heart3 {
+  animation: beat 0.55s infinite alternate;
+  transform-origin: center;
+}
+
+.heart4 {
+  animation: beat 0.45s infinite alternate;
+  transform-origin: center;
+}
+
+.heart5 {
+  animation: beat 0.4s infinite alternate;
+  transform-origin: center;
+}
+
+/* love-story animation */
+@keyframes love-story {
+  from {
+    fill: #ff0000;
+  }
+
+  to {
+    fill: rgb(0, 0, 0);
+    transform: scale(1.05);
+  }
+}
+
+/* begin animation */
+@keyframes begin {
+  to {
+    fill: transparent;
+  }
+}
+
+/* Heart beat animation */
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.typingSection2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* arrow */
+#arrow {
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  /* background-color: blueviolet; */
+  animation: transY 0.8s infinite alternate;
+  top: -50px;
+}
+#arrow1 {
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  /* background-color: blueviolet; */
+  animation: transY 0.8s infinite alternate;
+  top: -70px;
+}
+
+/* transY */
+@keyframes transY {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* Typing section 1 Start */
+.maintitle {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+.mainTitleTop{
+  margin-top: 10px ;
+}
+
+
+.title1 {
+  width: 49%;
+  /* font-size: 30px;
+  font-weight: 400;
+  text-align: center; */
+}
+
+.title2 {
+  width: 51%;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  color: red;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Typing section3 */
+.typingSection3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.typingSection3 .typingBox1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.typingBox1 img {
+  width: 80%;
+  
+}
+
+
+
+.typingSection3 .typingBox2 {}
+
+.typingBox2 img {
+  height: 500px;
+}
+
+.typingSection3 .typingBox3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.typingBox3 img {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+/* Typing Text Start */
+.wrapper {
+  position: absolute;
+  top: 104px;
+}
+
+.line__1,
+.line__2,
+.line__3 {
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #3b5861;
+}
+
+.line__1 {
+  /* border-right: 2px solid rgba(17, 17, 17, 0.9); */
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 6s steps(30, end) 1s 1 normal both;
+}
+
+.line__2 {
+  /* define animation types for text + cursor */
+  animation: animated-text__2 5s steps(30, end) 1s 1 normal both;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+.line__3 {
+  /* define animation types for text + cursor */
+  animation: animated-text__3 5s steps(30, end) 1s 1 normal both;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 30rem;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 29rem;
+  }
+}
+
+@keyframes animated-text__3 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 22rem;
+  }
+}
+
+/* Typing Text End */
+
+/* Typing section1 End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Typing Section 2 Start */
+.maintitle1 {
+  width: 100%;
+  display: flex;
+  /* margin-top: 50px; */
+}
+
+.title3 {
+  width: 51%;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: right;
+  color: red;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title4 {
+  width: 49%;
+  
+}
+
+/* Typing section3 */
+.typingSection4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.typingSection4 .typingBox4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.typingBox4 img {
+  width: 80%;
+  height: 80%;
+  
+}
+
+.typingSection4 .typingBox5 {}
+
+.typingBox5 img {
+  height: 500px;
+}
+
+.typingSection4 .typingBox6 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.typingBox6 img {
+  width: 80%;
+  height: 80%;
+}
+
+/* Typing Text Start */
+.typingBox4 .wrapper1 {
+  position: absolute;
+  top: 100px;
+}
+
+.line__1,
+.line__2,
+.line__3 {
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #3b5861;
+}
+
+.line__1 {
+  /* border-right: 2px solid rgba(17, 17, 17, 0.9); */
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 6s steps(30, end) 1s 1 normal both;
+}
+
+.line__2 {
+  /* define animation types for text + cursor */
+  animation: animated-text__2 5s steps(30, end) 1s 1 normal both;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+.line__3 {
+  /* define animation types for text + cursor */
+  animation: animated-text__3 5s steps(30, end) 1s 1 normal both;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 30rem;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 29rem;
+  }
+}
+
+@keyframes animated-text__3 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 22rem;
+  }
+}
+
+/* Typing Text End */
+
+
+/* Typing Section 2 End */
+
+
+
+
+
+
+
+
+
+/* Media Query */
+@media (max-width:912px) {
+
+  .typingSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  #svg2 {
+    height: 300px;
+  }
+
+  /* arrow */
+  #arrow {
+    position: absolute;
+    height: 60px;
+    width: 50px;
+    animation: transY 3s infinite linear;
+    top: -5px;
+  }
+
+  
+
+  #arrow1 {
+    position: absolute;
+    height: 60px;
+    width: 50px;
+    /* background-color: blueviolet; */
+    animation: transY 0.8s infinite linear;
+    top: -35px;
+  }
+
+
+  /* Typing Text 1 Start*/
+  .typingBox2 img {
+    height: 313px;
+  }
+
+  .typingBox3 img {
+    width: 90%;
+    height: 80%;
+    position: relative;
+  }
+
+
+  .wrapper {
+    position: absolute;
+    top: 70px;
+    left: 58px;
+  }
+
+  .line__1,
+  .line__2,
+  .line__3 {
+    margin: 4px auto;
+    display: block;
+    font-size: 14px;
+  }
+
+  .line__1 {
+    animation: animated-text__1 6s steps(30, end) 1s 1 normal both;
+  }
+
+  .line__2 {
+    animation: animated-text__2 5s steps(30, end) 1s 1 normal both;
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+  }
+
+  .line__3 {
+    animation: animated-text__3 5s steps(30, end) 1s 1 normal both;
+    -webkit-animation-delay: 13s;
+    animation-delay: 13s;
+  }
+
+  @keyframes animated-text__1 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 20rem;
+    }
+  }
+
+  @keyframes animated-text__2 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 20rem;
+    }
+  }
+
+  @keyframes animated-text__3 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 20rem;
+    }
+  }
+
+
+
+  /* Typing Section 2 Start */
+  .typingBox5 img {
+    height: 313px;
+  }
+  .typingSection4{
+    margin-top: 20px;
+  }
+
+  .typingBox4 .wrapper1 {
+    position: absolute;
+    top: 59px;
+    left: 75px;
+}
+  
+
+
+
+
+}
+
+
+@media (max-width:455px) {
+  #svg2 {
+    height: 100px;
+  }
+
+  /* arrow */
+  #arrow {
+    position: absolute;
+    height: 40px;
+    width: 30px;
+    animation: transY 3s infinite linear;
+    top: 8px;
+  }
+
+  .title2, .title3 {
+    font-size: 17px;
+  }
+  
+
+  .line__1,
+  .line__2,
+  .line__3 {
+    font-size: 9px;
+  }
+
+  .typingBox2 img {
+    height: 179px;
+  }
+  .typingBox5 img {
+    height: 179px;
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 37px;
+    left: 26px;
+  }
+  .typingBox4 .wrapper1 {
+    position: absolute;
+    top: 24px;
+    left: 38px;
+}
+  
+
+  @keyframes animated-text__1 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 8rem;
+    }
+  }
+
+  @keyframes animated-text__2 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 8rem;
+    }
+  }
+
+  @keyframes animated-text__3 {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 8rem;
+    }
+  }
+
+}

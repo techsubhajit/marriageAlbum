@@ -1,0 +1,189 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  span {
+    display: block !important;
+  }
+  
+
+
+
+  /*-----  navbar section start -------*/
+
+  .navbar{
+    background-color: #FFD4D4 !important;
+  }
+.navbar-brand {
+    padding-right: 480px !important;
+    padding-left: 70px !important;
+  }
+  
+  .active {
+    color: #FF0000 !important;
+  }
+  
+  .nav-link:hover {
+    color: #FF0000 !important;
+  }
+  
+  .nav-item {
+    color:  #FFD4D4 !important;
+    text-decoration: none;
+    padding: 0px 10px;
+    display: block;
+    font-weight: 700 !important;
+    font-style: 22px !important;
+  }
+  
+  .nav-class {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+  
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+   
+  }
+  .nav-item{
+    display: flex;
+    align-items: center;
+  }
+  .nav-link1{
+    
+  }
+  .nav-link1 img{
+    /* background-color: red; */
+    width: 30px;
+  }
+  
+  .nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background:  #FF0000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .nav-link:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+
+  /* navbar section */
+
+  /* welcome section start */
+
+  .welcome h1{
+    padding-top: 5%;
+    text-align: center;
+    text-shadow: 2px 2px 3px #000;
+    color: #C80000;
+    margin-bottom: 25px;
+    font-size: 45px;
+  }
+
+
+  .welcome h4{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+  /* welcome section end */
+
+  /* congo-section start */
+  .congo{
+    margin-top: -20%;
+    align-items: center;
+    margin-right: 20%;
+  }
+  .congo h3{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    position: relative;
+    font-size: 80px;
+    color: #C80000;
+    text-shadow: 2px 2px 3px #000;
+  }
+  .congo span img{
+margin-top: -19%;
+margin-left: 55%;
+  }
+  /* congo section end */
+
+
+  /*  */
+ 
+  @media(max-width:586px){
+
+
+    .welcome h1 {
+        padding-top: 16%;
+        text-align: center;
+        text-shadow: 2px 2px 3px #000;
+        color: #C80000;
+        margin-bottom: 10px;
+        font-size: 19px;
+    }
+    .welcome h4 {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        font-weight: 700;
+        font-size: 23px;
+        margin-bottom: 16px;
+    }
+
+    .congo h3 {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        position: relative;
+        font-size: 31px;
+        color: #C80000;
+        text-shadow: 2px 2px 3px #000;
+    }
+
+
+
+    .congo span img{
+   width:199px;
+   height: -15px;
+   margin-left: 63%;
+    margin-top: -24%;
+
+          }
+
+  }
+
+  
